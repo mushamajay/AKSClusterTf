@@ -1,7 +1,9 @@
 ## Azure config variables ##
 variable "client_id" {}
 
-variable "client_secret" {}
+variable "client_secret" {
+#  default = ******************************
+}
 
 variable location {
   default = "Central US"
@@ -9,7 +11,7 @@ variable location {
 
 ## Resource group variables ##
 variable resource_group_name {
-  default = "aksdemo-rg"
+  default = "aksdemo"
 }
 
 
@@ -23,9 +25,9 @@ variable "agent_count" {
 }
 
 variable "dns_prefix" {
-  default = "aksdemo"
+  default = "datamorphosis"
 }
 
 variable "admin_username" {
-    default = "demo"
+    default = "datamorphosis"
 }
